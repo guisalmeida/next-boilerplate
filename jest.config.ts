@@ -18,7 +18,11 @@ const config: Config = {
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ['src/**/*.ts(x)?'],
+  collectCoverageFrom: [
+    'src/**/*.ts(x)?',
+    '!src/app/**',
+    '!src/lib/registry.tsx'
+  ],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
