@@ -21,7 +21,9 @@ const config: Config = {
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
     '!src/app/**',
-    '!src/lib/registry.tsx'
+    '!src/lib/registry.tsx',
+    '!src/types/**',
+    '!src/styles/**'
   ],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
@@ -30,6 +32,14 @@ const config: Config = {
   // A map from regular expressions to paths to transformers
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]
+  },
+
+  // https://github.com/styled-components/styled-components/issues/4081
+  // v6 of styled-components doesn't inject styles in test environment
+  // we should to force it to use the browser version
+  moduleNameMapper: {
+    '^styled-components':
+      'styled-components/dist/styled-components.browser.cjs.js'
   }
 
   // The directory where Jest should output its coverage files
