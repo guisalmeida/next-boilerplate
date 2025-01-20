@@ -23,7 +23,8 @@ const config: Config = {
     '!src/app/**',
     '!src/lib/registry.tsx',
     '!src/types/**',
-    '!src/styles/**'
+    '!src/styles/**',
+    '!src/**/stories.tsx'
   ],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
