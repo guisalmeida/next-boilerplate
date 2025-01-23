@@ -1,11 +1,6 @@
 # Next-boilerplate
 ![ci](https://github.com/guisalmeida/next-boilerplate/workflows/ci/badge.svg)
 
-This is a [Next.js](https://nextjs.org/) boilerplate that can be used by running the following command (there is no need to clone it):
-```sh
-npx create-next-app --example https://github.com/guisalmeida/next-boilerplate
-```
-
 ## What is inside?
 
 This project uses a lot of stuff as:
@@ -22,8 +17,12 @@ This project uses a lot of stuff as:
 - [Plop](https://plopjs.com/documentation/)
 
 ## Getting Started
+This is a [Next.js](https://nextjs.org/) boilerplate that can be used by running the following command (there is no need to clone it):
+```sh
+npx create-next-app --example https://github.com/guisalmeida/next-boilerplate
+```
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
