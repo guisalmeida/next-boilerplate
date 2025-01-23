@@ -1,11 +1,11 @@
-
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+# Next-boilerplate
 
 This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate-apps-router/workflows/ci/badge.svg)
+![ci](https://github.com/React-Avancado/boilerplate-apps-router/workflows/ci/badge.svg)  
+
 ## What is inside?
 
-This project uses lot of stuff as:
+This project uses a lot of stuff as:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
@@ -16,6 +16,7 @@ This project uses lot of stuff as:
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
+- [Plop](https://plopjs.com/documentation/)
 
 ## Getting Started
 
@@ -40,7 +41,8 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - `test`: runs jest to test all components and pages
 - `test:watch`: runs jest in watch mode
 - `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+- `build-storybook`: creates the build version of the storybook
+- `generate`: creates a component structure with index, stories, styles and test files
 
 ## Learn More
 
